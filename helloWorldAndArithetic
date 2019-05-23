@@ -1,0 +1,62 @@
+// Giles Sandoval
+// gsandoval2277@gmail.com
+// Hello World
+
+
+#include <iostream>
+#include <string>
+#include <iomanip>
+
+using namespace std;
+
+int main() {
+	string myName;
+	float length, width, height, doorWinPer, foo;
+
+
+	myName = "Giles Sandoval";
+
+	cout << "Giles Sandoval" << endl;
+	cout << "gsandoval2277@gmail.com" << endl;
+	cout << "5/22/19" << endl; 
+
+	cout << "Giles Sandoval \n gsandoval2277@gmail.com \n 5/22/19 \n"; 
+
+	cout << "Hello World" << endl; 
+
+	cout << "Some programming experience in PHP and C#.net and currently wanting to learn the Python Language." << endl; 
+
+	cout << myName << " likes pizza." << endl;
+	cout << endl;
+	cout << endl;
+
+	// more info to help about cout and cin
+	// don't put end line because may confuse user. 
+	cout << "Please enter the length of wall one (ex. 10.5) in feet: ";
+	cin >> length; 
+
+	cout << endl << "length given is " << length << endl; 
+
+	cout << "Please enter the width of wall one (ex. 10.5) in feet: ";
+	cin >> width;
+
+	cout << "Please enter the height of wall one (ex. 10.5) in feet: ";
+	cin >> height;
+
+	cout << "Please enter the total percentage of wall space " << endl; 
+	cout << "used by doors and windows (ex. 10.5): ";
+	cin >> doorWinPer;
+
+	// if using a float or double add decimals and 00 ex 100.00
+	// you don't want integer, you want float because of percision
+	// cout.setf is a flag to set all decimals to fixed numbers.
+
+	foo = height * width * (doorWinPer / 100.00);
+	cout.setf(ios::fixed);
+	cout.precision(2);
+
+	cout << "foo = " << foo << endl; 
+	cout << "foo ceiling = " << ceil(foo) << endl;
+
+	return 0;
+}
