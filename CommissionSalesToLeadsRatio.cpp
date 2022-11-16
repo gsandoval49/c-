@@ -13,8 +13,6 @@ int main ()
   float commissionNeeded, avgDues, decimalPayout; //variables
   int nSales, nLeads;
 
-  //cout << "Hello World Test" << endl; // Test Worked.
-
   cout << "\n\nProgram to produce how many leads needed for the commission you want" <<endl;
 
   //Asking user to input data
@@ -43,7 +41,7 @@ int main ()
   int unitsNeeded; //calc for units needed
   unitsNeeded = duesNeeded / avgDues;
 
-  // calculation #1 for leads needed - algebra expression
+  // calculation #1 for leads needed
   int calcLead1;
   calcLead1 = nLeads * unitsNeeded;
 
